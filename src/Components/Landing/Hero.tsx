@@ -40,9 +40,9 @@ const Hero = () => {
             HealthIQue · One world · Connected healthcare
           </p>
 
-          <h1 className="text-[2.75rem] md:text-7xl leading-[1.05] tracking-tight text-ink font-medium">
+          <h1 className="text-4xl leading-[1.08] tracking-tight text-ink font-medium sm:text-6xl md:text-7xl md:leading-[1.05]">
             Your health story,
-            <br />
+            <br className="hidden sm:block" />
             wherever care
             <span className="text-primary"> finds you.</span>
           </h1>

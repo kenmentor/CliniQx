@@ -23,7 +23,7 @@ const SiteHeader = () => {
       }`}
     >
       <div className="mx-auto max-w-7xl px-6 md:px-10">
-        <div className="flex h-[76px] items-center justify-between gap-6">
+        <div className="flex h-[76px] items-center justify-between gap-3 md:gap-6">
           {/* Brand */}
           <a href="#top" className="flex items-center gap-3">
             <span className="flex h-10 w-10 items-center justify-center rounded-md bg-ink text-white text-lg font-medium shadow-soft">
@@ -87,7 +87,7 @@ const SiteHeader = () => {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-lg text-ink py-2 border-b border-muted last:border-0"
+                className="text-lg text-ink py-3 border-b border-muted last:border-0"
               >
                 {l.label}
               </a>
