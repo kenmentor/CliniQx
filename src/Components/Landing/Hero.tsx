@@ -9,7 +9,6 @@ import {
 } from "@heroicons/react/24/outline";
 import { FingerPrintIcon, CircleStackIcon } from "@heroicons/react/24/solid";
 import Button from "@/Components/UI/Button";
-import { Badge } from "@/Components/UI/Primitives";
 import { IMG } from "@/data/images";
 
 const Hero = () => {
@@ -32,10 +31,6 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: [0.21, 0.47, 0.32, 0.98] }}
           className="mx-auto max-w-4xl text-center"
         >
-          <Badge className="mb-8">
-            One record · Every facility · With your consent
-          </Badge>
-
           <p className="eyebrow text-ink-muted mb-6">
             HealthIQue · One world · Connected healthcare
           </p>
