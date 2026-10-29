@@ -1,13 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cliniqx-ink: #0a2540;
+  --cliniqx-primary: #128ef3;
+  --cliniqx-secondary: #75c6fc;
+  --cliniqx-bg: #f7f7f7;
+  --cliniqx-border: #e2e8f0;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Varela Round', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cliniqx-bg);
+  color: var(--cliniqx-ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.7;
+}
+
+::selection {
+  background: #128ef3;
+  color: #fff;
 }
 
 ::-webkit-scrollbar {
@@ -25,6 +50,41 @@
 
 /* Styles for the scrollbar track */
 ::-webkit-scrollbar-track {
-  background-color: #a7c4ff; /* Color of the track */
+  background-color: #e6eefb; /* Color of the track */
   border-radius: 4px;
+}
+
+/* Apple breathing rhythm — one idea per viewport, generous air */
+.section-air {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .section-air {
+    padding-top: 8.5rem;
+    padding-bottom: 8.5rem;
+  }
+}
+
+@media (min-width: 1124px) {
+  .section-air {
+    padding-top: 10.5rem;
+    padding-bottom: 10.5rem;
+  }
+}
+
+.eyebrow {
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(10, 37, 64, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(10, 37, 64, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 20%, black 55%, transparent 100%);
 }

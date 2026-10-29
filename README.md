@@ -1,21 +1,26 @@
-# Hospital Landing Page
+# CliniQx
 
-🏥 Welcome to the Hospital Landing Page project, built with React.js, TypeScript, and Tailwind CSS. This modern and responsive landing page is designed for hospitals and healthcare institutions to showcase their services and provide essential information to visitors.
+ClinIQx by HealthIQue — one secure health record across every clinic and hospital. Your visits, results, bills and referrals, shared only with your permission.
 
-## Features:
+Public landing page built with React + TypeScript + Tailwind CSS (Vite).
 
-- 🚀 Built with React.js and TypeScript for a robust and maintainable codebase.
-- 🎨 Stylish and responsive design powered by Tailwind CSS.
-- 📋 Easily customizable to add hospital-specific content and branding.
-- 🧰 Extendable architecture for additional sections like About, Services, Contact, etc.
+## Run it
 
-## Getting Started:
+```bash
+npm install
+npm run dev      # local preview
+npm run build    # production build (tsc + vite)
+npm run deploy   # publish dist/ to GitHub Pages
+```
 
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Customize the content and styling to match your hospital's branding.
-4. Deploy the landing page to your preferred hosting platform.
+## Structure
 
-Explore the codebase and documentation to get started with your Hospital Landing Page project today!
+- `src/Components/Landing/` — public scroll only (patient-safe copy, zero builder jargon)
+- `src/Components/PartnerRoom/` — INTERNAL: architecture, domains, roadmap, partnership (not rendered publicly; reserved for the gated partner page)
+- `src/Components/UI/` — shadcn-style primitives (Button, Badge, Card, SectionHeading, Reveal)
+- `src/data/cliniqx.ts` — public copy · `src/data/partner-brief.ts` — INTERNAL builder copy
+- `ref/` — source executive brief (internal, not for publication)
 
-🌐 Live Demo: [Hospital Landing Page Demo](https://romaletodiani.github.io/Hospital-Website/)
+## Design rules
+
+Apple spacing (one idea per section, `py-24 → py-40`), almost-angular geometry (`rounded-lg/md`), Heroicons throughout, numbered enterprise sections, real clinical photography.
